@@ -2,14 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import throttle from "lodash/throttle";
 import Overlay from "../../components/Overlay/Overlay";
-import Flex from "../../components/Box/Flex";
+import { Flex } from "../../components/Flex";
 import { useMatchBreakpoints } from "../../hooks";
-import Logo from "./components/Logo";
-import Panel from "./components/Panel";
-import UserBlock from "./components/UserBlock";
+import Logo from "./Logo";
+import Panel from "./Panel";
+import UserBlock from "./UserBlock";
 import { NavProps } from "./types";
-import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import Avatar from "./Avatar";
 
 const Wrapper = styled.div`
   position: relative;
@@ -22,7 +22,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   left: 0;
   transition: top 0.2s;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-left: 8px;
   padding-right: 16px;
@@ -44,11 +44,8 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
   transition: margin-top 0.2s;
   transform: translate3d(0, 0, 0);
-  max-width: 100%;
-
   ${({ theme }) => theme.mediaQueries.nav} {
-    // margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
-    // max-width: ${({ isPushed }) => `calc(100% - ${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px)`};
+    margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
 `;
 
@@ -72,6 +69,7 @@ const Menu: React.FC<NavProps> = ({
   currentLang,
   cakePriceUsd,
   links,
+  priceLink,
   profile,
   children,
 }) => {
@@ -122,6 +120,12 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+        <Flex>
+          <UserBlock account={account} login={login} logout={logout} />
+          {profile && <Avatar profile={profile} />}
+        </Flex>
+      </StyledNav>
+      <BodyWrapper>
         <Panel
           isPushed={isPushed}
           isMobile={isMobile}
@@ -134,14 +138,8 @@ const Menu: React.FC<NavProps> = ({
           cakePriceUsd={cakePriceUsd}
           pushNav={setIsPushed}
           links={links}
+          priceLink={priceLink}
         />
-        <Flex>
-          <UserBlock account={account} login={login} logout={logout} />
-          {profile && <Avatar profile={profile} />}
-        </Flex>
-      </StyledNav>
-      <BodyWrapper>
-        
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}
         </Inner>
