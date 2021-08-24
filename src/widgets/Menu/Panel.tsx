@@ -11,8 +11,8 @@ interface Props extends PanelProps, PushedProps {
 }
 
 const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
-  position: fixed;
-  padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
+  position: relative;
+  // padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
   top: 0;
   left: 0;
   display: flex;
@@ -20,8 +20,8 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   justify-content: space-between;
   flex-shrink: 0;
   background-color: ${({ theme }) => theme.nav.background};
-  width: ${({ isPushed }) => (isPushed ? `${SIDEBAR_WIDTH_FULL}px` : 0)};
-  height: 100vh;
+  width: auto;
+  height: auto;
   transition: padding-top 0.2s, width 0.2s;
   border-right: ${({ isPushed }) => (isPushed ? "2px solid rgba(133, 133, 133, 0.1)" : 0)};
   z-index: 11;
@@ -30,7 +30,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 
   ${({ theme }) => theme.mediaQueries.nav} {
     border-right: 2px solid rgba(133, 133, 133, 0.1);
-    width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
+    // width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
 `;
 
@@ -39,7 +39,7 @@ const Panel: React.FC<Props> = (props) => {
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
-      <PanelFooter {...props} />
+      {/* <PanelFooter {...props} /> */}
     </StyledPanel>
   );
 };

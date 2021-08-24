@@ -18,11 +18,11 @@ const Wrapper = styled.div`
 
 const StyledNav = styled.nav<{ showMenu: boolean }>`
   position: fixed;
-  top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
+  top: 0px;
   left: 0;
   transition: top 0.2s;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-left: 8px;
   padding-right: 16px;
@@ -44,9 +44,9 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
   transition: margin-top 0.2s;
   transform: translate3d(0, 0, 0);
-  ${({ theme }) => theme.mediaQueries.nav} {
-    margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
-  }
+  // ${({ theme }) => theme.mediaQueries.nav} {
+  //   margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
+  // }
 `;
 
 const MobileOnlyOverlay = styled(Overlay)`
@@ -120,12 +120,6 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
-        <Flex>
-          <UserBlock account={account} login={login} logout={logout} />
-          {profile && <Avatar profile={profile} />}
-        </Flex>
-      </StyledNav>
-      <BodyWrapper>
         <Panel
           isPushed={isPushed}
           isMobile={isMobile}
@@ -140,6 +134,12 @@ const Menu: React.FC<NavProps> = ({
           links={links}
           priceLink={priceLink}
         />
+        <Flex>
+          <UserBlock account={account} login={login} logout={logout} />
+          {profile && <Avatar profile={profile} />}
+        </Flex>
+      </StyledNav>
+      <BodyWrapper>
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}
         </Inner>
