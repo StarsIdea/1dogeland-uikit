@@ -23,12 +23,16 @@ const StyledLink = styled(Link)`
     }
   }
   .desktop-icon {
-    width: 156px;
+    width: 60px;
     display: none;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: block;
     }
   }
+`;
+const LogoText = styled.div`
+  color: #fdd325;
+  font-size: 1.5rem;
 `;
 
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
@@ -37,6 +41,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
     <>
       <LogoIcon className="mobile-icon" />
       <LogoWithText className="desktop-icon" isDark={isDark} />
+      <LogoText>1DogeLand</LogoText>
     </>
   );
 
@@ -50,11 +55,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton> */}
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
+        <StyledLink as="a" href={href} aria-label="1Doge home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
+        <StyledLink to={href} aria-label="1Doge home page">
           {innerLogo}
         </StyledLink>
       )}

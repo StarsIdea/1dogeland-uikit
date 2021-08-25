@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { MENU_ENTRY_HEIGHT } from "./config";
+import { MENU_ENTRY_HEIGHT, MENU_HEIGHT } from "./config";
 import { MenuEntry, LinkLabel } from "./MenuEntry";
 import { PushedProps } from "./types";
 import { ArrowDropDownIcon, ArrowDropUpIcon } from "../../components/Svg";
@@ -26,6 +26,8 @@ const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHei
   border-color: ${({ isOpen, isPushed }) => (isOpen && isPushed ? "rgba(133, 133, 133, 0.1)" : "transparent")};
   border-style: solid;
   border-width: 1px;
+  position: absolute;
+  top: ${`${MENU_HEIGHT}px`};
 `;
 
 const Accordion: React.FC<Props> = ({
