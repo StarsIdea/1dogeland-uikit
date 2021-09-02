@@ -7,7 +7,7 @@ import { ArrowDropDownIcon, ArrowDropUpIcon } from "../../components/Svg";
 
 interface Props extends PushedProps {
   label: string;
-  icon: React.ReactElement;
+  // icon: React.ReactElement;
   initialOpenState?: boolean;
   className?: string;
 }
@@ -32,7 +32,7 @@ const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHei
 
 const Accordion: React.FC<Props> = ({
   label,
-  icon,
+  // icon,
   isPushed,
   pushNav,
   initialOpenState = false,
@@ -53,7 +53,7 @@ const Accordion: React.FC<Props> = ({
   return (
     <Container>
       <MenuEntry onClick={handleClick} className={className}>
-        {icon}
+        {/* {icon} */}
         <LinkLabel isPushed={isPushed}>{label}</LinkLabel>
         {isOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
       </MenuEntry>
