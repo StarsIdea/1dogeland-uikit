@@ -177,7 +177,7 @@ var StyledButton = styled__default['default'].button(templateObject_1$2 || (temp
     return (fullWidth ? "100%" : "max-content");
 }, function (_a) {
     var size = _a.size;
-    return (size === "sm" ? "32px" : "48px");
+    return (size === "sm" ? "40px" : "48px");
 }, function (_a) {
     var size = _a.size;
     return (size === "sm" ? "0 16px" : "0 24px");
