@@ -693,7 +693,10 @@ var Card = function (_a) {
         children));
 };
 
-var CardBody = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  ", "\n"], ["\n  ", "\n"])), space);
+var CardBody = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  ", "\n  background-color: ", ";\n"], ["\n  ", "\n  background-color: ", ";\n"])), space, function (_a) {
+    var theme = _a.theme;
+    return theme.card.background;
+});
 CardBody.defaultProps = {
     p: "24px",
 };
@@ -708,10 +711,13 @@ CardHeader.defaultProps = {
 };
 var templateObject_1$b;
 
-var CardFooter = styled.div(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  border-top: 1px solid ", ";\n  ", "\n"], ["\n  border-top: 1px solid ", ";\n  ", "\n"])), function (_a) {
+var CardFooter = styled.div(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  border-top: 1px solid ", ";\n  ", "\n  background-color: ", ";\n"], ["\n  border-top: 1px solid ", ";\n  ", "\n  background-color: ", ";\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.borderColor;
-}, space);
+}, space, function (_a) {
+    var theme = _a.theme;
+    return theme.card.background;
+});
 CardFooter.defaultProps = {
     p: "24px",
 };
