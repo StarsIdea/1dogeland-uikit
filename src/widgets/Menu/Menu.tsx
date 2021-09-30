@@ -1,14 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import throttle from "lodash/throttle";
+import BottomNav from "../../components/BottomNav";
 import Overlay from "../../components/Overlay/Overlay";
 import { Flex } from "../../components/Flex";
+import Footer from "../../components/Footer";
+import { Box } from "../../components/Box";
+import MenuItems from "../../components/MenuItems/MenuItems";
+import { SubMenuItems } from "../../components/SubMenuItems";
+import CakePrice from "../../components/CakePrice/CakePrice";
 import { useMatchBreakpoints } from "../../hooks";
 import Logo from "./Logo";
 import Panel from "./Panel";
 import UserBlock from "./UserBlock";
 import { NavProps } from "./types";
-import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import { MENU_HEIGHT, MOBILE_MENU_HEIGHT } from "./config";
 import Avatar from "./Avatar";
 
 const Wrapper = styled.div`
@@ -18,18 +24,17 @@ const Wrapper = styled.div`
 
 const StyledNav = styled.nav<{ showMenu: boolean }>`
   position: fixed;
-  top: 0px;
+  top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
   left: 0;
   transition: top 0.2s;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-left: 8px;
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  // background-color: ${({ theme }) => theme.nav.background};
-  background-color: #27262c;
+  background-color: ${({ theme }) => theme.nav.background};
   border-bottom: solid 2px rgba(133, 133, 133, 0.1);
   z-index: 20;
   transform: translate3d(0, 0, 0);
@@ -45,9 +50,6 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
   transition: margin-top 0.2s;
   transform: translate3d(0, 0, 0);
-  // ${({ theme }) => theme.mediaQueries.nav} {
-  //   margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
-  // }
 `;
 
 const MobileOnlyOverlay = styled(Overlay)`
@@ -70,7 +72,9 @@ const Menu: React.FC<NavProps> = ({
   currentLang,
   cakePriceUsd,
   links,
+  footerLinks,
   priceLink,
+  buyCakeLabel,
   profile,
   children,
 }) => {
@@ -115,36 +119,36 @@ const Menu: React.FC<NavProps> = ({
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <Logo
-          isPushed={isPushed}
-          togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
-          isDark={isDark}
-          href={homeLink?.href ?? "/"}
-        />
-        <Panel
-          isPushed={isPushed}
-          isMobile={isMobile}
-          showMenu={showMenu}
-          isDark={isDark}
-          toggleTheme={toggleTheme}
-          langs={langs}
-          setLang={setLang}
-          currentLang={currentLang}
-          cakePriceUsd={cakePriceUsd}
-          pushNav={setIsPushed}
-          links={links}
-          priceLink={priceLink}
-        />
         <Flex>
+          <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
+          {!isMobile && <MenuItems items={links} ml="24px" />}
+        </Flex>
+        <Flex alignItems="center">
+          {!isMobile && (
+            <Box mr="12px">
+              <CakePrice cakePriceUsd={cakePriceUsd} />
+            </Box>
+          )}
           <UserBlock account={account} login={login} logout={logout} />
-          {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>
+      {/* {links && <SubMenuItems items={links} mt={`${MENU_HEIGHT + 1}px`} activeItem={activeItem} />} */}
       <BodyWrapper>
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}
+          {/* <Footer
+            items={footerLinks}
+            isDark={isDark}
+            toggleTheme={toggleTheme}
+            langs={langs}
+            setLang={setLang}
+            currentLang={currentLang}
+            cakePriceUsd={cakePriceUsd}
+            buyCakeLabel={buyCakeLabel}
+            mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
+          /> */}
         </Inner>
-        <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
+        {isMobile && <BottomNav items={links} />}
       </BodyWrapper>
     </Wrapper>
   );
