@@ -2972,13 +2972,12 @@ var LinkStatus = styled__default['default'](Text)(templateObject_6 || (templateO
 });
 var templateObject_1$D, templateObject_2$c, templateObject_3$6, templateObject_4$2, templateObject_5$1, templateObject_6;
 
-var DropdownMenuItemType;
 (function (DropdownMenuItemType) {
     DropdownMenuItemType[DropdownMenuItemType["INTERNAL_LINK"] = 0] = "INTERNAL_LINK";
     DropdownMenuItemType[DropdownMenuItemType["EXTERNAL_LINK"] = 1] = "EXTERNAL_LINK";
     DropdownMenuItemType[DropdownMenuItemType["BUTTON"] = 2] = "BUTTON";
     DropdownMenuItemType[DropdownMenuItemType["DIVIDER"] = 3] = "DIVIDER";
-})(DropdownMenuItemType || (DropdownMenuItemType = {}));
+})(exports.DropdownMenuItemType || (exports.DropdownMenuItemType = {}));
 
 var DropdownMenu = function (_a) {
     var children = _a.children, _b = _a.isBottomNav, isBottomNav = _b === void 0 ? false : _b, _c = _a.showItemsOnMobile, showItemsOnMobile = _c === void 0 ? false : _c, _d = _a.activeItem, activeItem = _d === void 0 ? "" : _d, _e = _a.items, items = _e === void 0 ? [] : _e, _f = _a.openMenuTimeout, openMenuTimeout = _f === void 0 ? 0 : _f, props = __rest(_a, ["children", "isBottomNav", "showItemsOnMobile", "activeItem", "items", "openMenuTimeout"]);
@@ -3076,19 +3075,19 @@ var DropdownMenu = function (_a) {
         React__default['default'].createElement(Box, { ref: isBottomNav ? setTargetRef : null }, children),
         isBottomNav && isOpen && showItemsOnMobile && React__default['default'].createElement(StyledOverlay, null),
         hasItems && (React__default['default'].createElement(StyledDropdownMenu, __assign({ style: styles.popper, ref: setTooltipRef }, attributes.popper, { "$isBottomNav": isBottomNav, "$isOpen": isOpen && ((isBottomNav && showItemsOnMobile) || !isBottomNav) }), items.map(function (_a, index) {
-            var _b = _a.type, type = _b === void 0 ? DropdownMenuItemType.INTERNAL_LINK : _b, label = _a.label, _c = _a.href, href = _c === void 0 ? "/" : _c, status = _a.status, itemProps = __rest(_a, ["type", "label", "href", "status"]);
+            var _b = _a.type, type = _b === void 0 ? exports.DropdownMenuItemType.INTERNAL_LINK : _b, label = _a.label, _c = _a.href, href = _c === void 0 ? "/" : _c, status = _a.status, itemProps = __rest(_a, ["type", "label", "href", "status"]);
             var MenuItemContent = (React__default['default'].createElement(React__default['default'].Fragment, null,
                 label,
                 status && (React__default['default'].createElement(LinkStatus, { color: status.color, fontSize: "14px" }, status.text))));
             var isActive = href === activeItem;
             return (React__default['default'].createElement(StyledDropdownMenuItemContainer, { key: index },
-                type === DropdownMenuItemType.BUTTON && (React__default['default'].createElement(DropdownMenuItem, __assign({ "$isActive": isActive, type: "button" }, itemProps), MenuItemContent)),
-                type === DropdownMenuItemType.INTERNAL_LINK && (React__default['default'].createElement(DropdownMenuItem, __assign({ "$isActive": isActive, as: reactRouterDom.Link, to: href }, itemProps), MenuItemContent)),
-                type === DropdownMenuItemType.EXTERNAL_LINK && (React__default['default'].createElement(DropdownMenuItem, __assign({ "$isActive": isActive, as: "a", href: href, target: "_blank" }, itemProps),
+                type === exports.DropdownMenuItemType.BUTTON && (React__default['default'].createElement(DropdownMenuItem, __assign({ "$isActive": isActive, type: "button" }, itemProps), MenuItemContent)),
+                type === exports.DropdownMenuItemType.INTERNAL_LINK && (React__default['default'].createElement(DropdownMenuItem, __assign({ "$isActive": isActive, as: reactRouterDom.Link, to: href }, itemProps), MenuItemContent)),
+                type === exports.DropdownMenuItemType.EXTERNAL_LINK && (React__default['default'].createElement(DropdownMenuItem, __assign({ "$isActive": isActive, as: "a", href: href, target: "_blank" }, itemProps),
                     React__default['default'].createElement(Flex$1, { alignItems: "center", justifyContent: "space-between", width: "100%" },
                         label,
                         React__default['default'].createElement(IconComponent, { iconName: "Logout" })))),
-                type === DropdownMenuItemType.DIVIDER && React__default['default'].createElement(DropdownMenuDivider, null)));
+                type === exports.DropdownMenuItemType.DIVIDER && React__default['default'].createElement(DropdownMenuDivider, null)));
         })))));
 };
 
@@ -3165,8 +3164,8 @@ var templateObject_1$F;
 
 var Logo$1 = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React__default['default'].createElement("image", { width: "205", height: "26", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 60 60" }, props),
+        React__default['default'].createElement("image", { width: "60", height: "60", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
 };
 
 var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObject_1$G || (templateObject_1$G = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 60px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 60px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"])), function (_a) {
@@ -3388,13 +3387,14 @@ var UserBlock = function (_a) {
         } }, "Connect"))));
 };
 
-var links = [
+[
     {
         label: "Home",
         icon: "HomeIcon",
         href: "/",
     },
     {
+        href: "",
         label: "Trade",
         icon: "TradeIcon",
         items: [
@@ -3429,6 +3429,7 @@ var links = [
         href: "/nft",
     },
     {
+        href: "",
         label: "Profile & Teams",
         icon: "GroupsIcon",
         items: [
@@ -3441,9 +3442,9 @@ var links = [
                 href: "/",
             },
         ],
-        calloutClass: "rainbow",
     },
     {
+        href: "",
         label: "Info",
         icon: "InfoIcon",
         items: [
@@ -3466,6 +3467,7 @@ var links = [
         ],
     },
     {
+        href: "",
         label: "IFO",
         icon: "IfoIcon",
         items: [
@@ -3480,6 +3482,7 @@ var links = [
         ],
     },
     {
+        href: "",
         label: "More",
         icon: "MoreIcon",
         items: [
@@ -3490,14 +3493,17 @@ var links = [
             {
                 label: "Github",
                 href: "https://github.com/goosedefi/",
+                type: exports.DropdownMenuItemType.EXTERNAL_LINK,
             },
             {
                 label: "Docs",
                 href: "https://goosedefi.gitbook.io/goose-finance/",
+                type: exports.DropdownMenuItemType.EXTERNAL_LINK,
             },
             {
                 label: "Blog",
                 href: "https://goosefinance.medium.com/",
+                type: exports.DropdownMenuItemType.EXTERNAL_LINK,
             },
         ],
     },
@@ -4009,7 +4015,6 @@ exports.darkColors = darkColors;
 exports.light = lightTheme;
 exports.lightColors = lightColors;
 exports.makeRender = makeRender;
-exports.menuConfig = links;
 exports.toastTypes = types;
 exports.useMatchBreakpoints = useMatchBreakpoints;
 exports.useModal = useModal;

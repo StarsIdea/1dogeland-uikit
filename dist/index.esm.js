@@ -3151,8 +3151,8 @@ var templateObject_1$F;
 
 var Logo$1 = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React.createElement("image", { width: "205", height: "26", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 60 60" }, props),
+        React.createElement("image", { width: "60", height: "60", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
 };
 
 var StyledLink$1 = styled(Link$1)(templateObject_1$G || (templateObject_1$G = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 60px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 60px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"])), function (_a) {
@@ -3374,13 +3374,14 @@ var UserBlock = function (_a) {
         } }, "Connect"))));
 };
 
-var links = [
+[
     {
         label: "Home",
         icon: "HomeIcon",
         href: "/",
     },
     {
+        href: "",
         label: "Trade",
         icon: "TradeIcon",
         items: [
@@ -3415,6 +3416,7 @@ var links = [
         href: "/nft",
     },
     {
+        href: "",
         label: "Profile & Teams",
         icon: "GroupsIcon",
         items: [
@@ -3427,9 +3429,9 @@ var links = [
                 href: "/",
             },
         ],
-        calloutClass: "rainbow",
     },
     {
+        href: "",
         label: "Info",
         icon: "InfoIcon",
         items: [
@@ -3452,6 +3454,7 @@ var links = [
         ],
     },
     {
+        href: "",
         label: "IFO",
         icon: "IfoIcon",
         items: [
@@ -3466,6 +3469,7 @@ var links = [
         ],
     },
     {
+        href: "",
         label: "More",
         icon: "MoreIcon",
         items: [
@@ -3476,14 +3480,17 @@ var links = [
             {
                 label: "Github",
                 href: "https://github.com/goosedefi/",
+                type: DropdownMenuItemType.EXTERNAL_LINK,
             },
             {
                 label: "Docs",
                 href: "https://goosedefi.gitbook.io/goose-finance/",
+                type: DropdownMenuItemType.EXTERNAL_LINK,
             },
             {
                 label: "Blog",
                 href: "https://goosefinance.medium.com/",
+                type: DropdownMenuItemType.EXTERNAL_LINK,
             },
         ],
     },
@@ -3809,4 +3816,4 @@ var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark, button
 
 var lightTheme = __assign(__assign({}, base), { isDark: false, alert: light, button: light$1, colors: lightColors, card: light$2, toggle: light$4, nav: light$5, modal: light$6, radio: light$3 });
 
-export { Icon$5 as AccountFilledIcon, Icon$4 as AccountIcon, Icon$6 as AddIcon, Alert, Icon$7 as ArrowBackIcon, Icon$8 as ArrowDownIcon, Icon$9 as ArrowDropDownIcon, Icon$a as ArrowDropUpIcon, Icon$b as ArrowFirstIcon, Icon$c as ArrowForwardIcon, Icon$d as ArrowLastIcon, Icon$e as ArrowUpIcon, Icon$f as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$h as BinanceChainIcon, Icon$g as BinanceIcon, Icon$2 as BlockIcon, Icon$i as BnbUsdtPairTokenIcon, Breadcrumbs, Icon$j as BscScanIcon, Icon$k as BunnyCardsIcon, Icon$l as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$p as CalculateIcon, Icon$m as CameraIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$o as CardViewIcon, Icon$n as Cards, GridLayout$1 as CardsLayout, Icon$r as ChartIcon, Checkbox, Icon$t as CheckmarkCircleFillIcon, Icon as CheckmarkCircleIcon, Icon$s as CheckmarkIcon, Icon$u as ChevronDownIcon, Icon$v as ChevronLeftIcon, Icon$w as ChevronRightIcon, Icon$x as ChevronUpIcon, Icon$q as CircleOutlineIcon, Icon$y as CloseIcon, Icon$z as CogIcon, Icon$A as Coin98Icon, Icon$C as CommunityFilledIcon, Icon$B as CommunityIcon, Icon$D as CopyIcon, CopyToClipboard, Icon$E as CrownIcon, Icon$F as CurrencyIcon, Dropdown, Icon$29 as EarnFillIcon, Icon$H as EarnFilledIcon, Icon$G as EarnIcon, Icon$I as EllipsisIcon, Icon$1 as ErrorIcon, Icon$1Z as FarmIcon, Flex, Icon$K as GithubIcon, Icon$1_ as GroupsIcon, Icon$20 as HamburgerCloseIcon, Icon$1$ as HamburgerIcon, Heading, Icon$L as HelpIcon, Icon$M as HistoryIcon, Icon$21 as HomeIcon, IconButton, Icon$22 as IfoIcon, Image, Icon$3 as InfoIcon, Input, Icon$J as InstagramIcon, Icon$O as LanguageCurrencyIcon, Icon$N as LanguageIcon, Icon$P as LaurelLeftIcon, Icon$Q as LaurelRightIcon, Link, LinkExternal, Icon$R as ListViewIcon, Icon$S as LoginIcon, Icon$T as LogoIcon, Icon$U as LogoRoundIcon, LogoWithText as LogoWithTextIcon, Icon$W as LogoutIcon, Icon$V as MathWalletIcon, Icon$X as MedalBronzeIcon, Icon$Y as MedalGoldIcon, Icon$Z as MedalPurpleIcon, Icon$_ as MedalSilverIcon, Icon$$ as MedalTealIcon, Menu, Icon$10 as MetamaskIcon, Icon$11 as MinusIcon, Modal, ModalProvider, Icon$23 as MoonIcon, Icon$12 as MoreHorizontalIcon, Icon$24 as MoreIcon, Icon$13 as MoreVerticalIcon, Icon$25 as NftFillIcon, Icon$15 as NftFilledIcon, Icon$14 as NftIcon, Icon$16 as NoProfileAvatarIcon, Icon$17 as OpenNewIcon, Icon$1a as PancakeRoundIcon, Icon$18 as PancakesIcon, Icon$19 as PencilIcon, Icon$1c as PlayCircleOutlineIcon, Icon$1b as PocketWatchIcon, Icon$26 as PoolIcon, Icon$1d as PredictionsIcon, Icon$1j as PresentCheckIcon, Icon$1l as PresentNoneIcon, Icon$1k as PresentWonIcon, Icon$1e as PrizeIcon, Progress, Icon$1i as ProgressBunny, Icon$1f as ProposalIcon, Radio, Icon$1m as RedditIcon, Icon$1n as RefreshIcon, Icon$1g as RemoveIcon, ResetCSS, Icon$1p as ResourcesFilledIcon, Icon$1o as ResourcesIcon, Icon$1q as SafePalIcon, Icon$1r as SearchIcon, Icon$1s as SellIcon, Icon$1t as ShareIcon, Skeleton, Icon$1u as SmallDotIcon, Spinner, Icon$1v as StarFillIcon, Icon$1w as StarLineIcon, Icon$27 as SunIcon, Svg, Icon$1y as SwapFillIcon, Icon$1x as SwapIcon, Icon$1z as SwapVertIcon, Icon$1A as SyncAltIcon, Tag, Icon$28 as TeamBattleIcon, Icon$1B as TeamPlayerIcon, Icon$1C as TelegramIcon, Icon$1D as TestnetIcon, Text, Icon$1E as Ticket, Icon$1F as TicketFillIcon, Icon$1E as TicketIcon, Icon$1G as TicketRound, Icon$1H as TimerIcon, ToastContainer, Toggle, Icon$1I as TokenPocketIcon, Icon$1K as TradeFilledIcon, Icon$1J as TradeIcon, Icon$2b as TrophyFillIcon, Icon$1L as TrophyGoldIcon, Icon$2a as TrophyIcon, Icon$1M as TrustWalletIcon, Icon$1O as TuneIcon, Icon$1N as TwitterIcon, Icon$1h as VerifiedIcon, Icon$1P as VisibilityOff, Icon$1Q as VisibilityOn, Icon$1R as VolumeOffIcon, Icon$1S as VolumeUpIcon, Icon$1T as VoteIcon, Icon$1Y as WaitIcon, Icon$1V as WalletConnectIcon, Icon$1X as WalletFilledIcon, Icon$1W as WalletIcon, Icon$1U as WarningIcon, variants$1 as alertVariants, byTextAscending, byTextDescending, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, links as menuConfig, types as toastTypes, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };
+export { Icon$5 as AccountFilledIcon, Icon$4 as AccountIcon, Icon$6 as AddIcon, Alert, Icon$7 as ArrowBackIcon, Icon$8 as ArrowDownIcon, Icon$9 as ArrowDropDownIcon, Icon$a as ArrowDropUpIcon, Icon$b as ArrowFirstIcon, Icon$c as ArrowForwardIcon, Icon$d as ArrowLastIcon, Icon$e as ArrowUpIcon, Icon$f as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$h as BinanceChainIcon, Icon$g as BinanceIcon, Icon$2 as BlockIcon, Icon$i as BnbUsdtPairTokenIcon, Breadcrumbs, Icon$j as BscScanIcon, Icon$k as BunnyCardsIcon, Icon$l as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$p as CalculateIcon, Icon$m as CameraIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$o as CardViewIcon, Icon$n as Cards, GridLayout$1 as CardsLayout, Icon$r as ChartIcon, Checkbox, Icon$t as CheckmarkCircleFillIcon, Icon as CheckmarkCircleIcon, Icon$s as CheckmarkIcon, Icon$u as ChevronDownIcon, Icon$v as ChevronLeftIcon, Icon$w as ChevronRightIcon, Icon$x as ChevronUpIcon, Icon$q as CircleOutlineIcon, Icon$y as CloseIcon, Icon$z as CogIcon, Icon$A as Coin98Icon, Icon$C as CommunityFilledIcon, Icon$B as CommunityIcon, Icon$D as CopyIcon, CopyToClipboard, Icon$E as CrownIcon, Icon$F as CurrencyIcon, Dropdown, DropdownMenuItemType, Icon$29 as EarnFillIcon, Icon$H as EarnFilledIcon, Icon$G as EarnIcon, Icon$I as EllipsisIcon, Icon$1 as ErrorIcon, Icon$1Z as FarmIcon, Flex, Icon$K as GithubIcon, Icon$1_ as GroupsIcon, Icon$20 as HamburgerCloseIcon, Icon$1$ as HamburgerIcon, Heading, Icon$L as HelpIcon, Icon$M as HistoryIcon, Icon$21 as HomeIcon, IconButton, Icon$22 as IfoIcon, Image, Icon$3 as InfoIcon, Input, Icon$J as InstagramIcon, Icon$O as LanguageCurrencyIcon, Icon$N as LanguageIcon, Icon$P as LaurelLeftIcon, Icon$Q as LaurelRightIcon, Link, LinkExternal, Icon$R as ListViewIcon, Icon$S as LoginIcon, Icon$T as LogoIcon, Icon$U as LogoRoundIcon, LogoWithText as LogoWithTextIcon, Icon$W as LogoutIcon, Icon$V as MathWalletIcon, Icon$X as MedalBronzeIcon, Icon$Y as MedalGoldIcon, Icon$Z as MedalPurpleIcon, Icon$_ as MedalSilverIcon, Icon$$ as MedalTealIcon, Menu, Icon$10 as MetamaskIcon, Icon$11 as MinusIcon, Modal, ModalProvider, Icon$23 as MoonIcon, Icon$12 as MoreHorizontalIcon, Icon$24 as MoreIcon, Icon$13 as MoreVerticalIcon, Icon$25 as NftFillIcon, Icon$15 as NftFilledIcon, Icon$14 as NftIcon, Icon$16 as NoProfileAvatarIcon, Icon$17 as OpenNewIcon, Icon$1a as PancakeRoundIcon, Icon$18 as PancakesIcon, Icon$19 as PencilIcon, Icon$1c as PlayCircleOutlineIcon, Icon$1b as PocketWatchIcon, Icon$26 as PoolIcon, Icon$1d as PredictionsIcon, Icon$1j as PresentCheckIcon, Icon$1l as PresentNoneIcon, Icon$1k as PresentWonIcon, Icon$1e as PrizeIcon, Progress, Icon$1i as ProgressBunny, Icon$1f as ProposalIcon, Radio, Icon$1m as RedditIcon, Icon$1n as RefreshIcon, Icon$1g as RemoveIcon, ResetCSS, Icon$1p as ResourcesFilledIcon, Icon$1o as ResourcesIcon, Icon$1q as SafePalIcon, Icon$1r as SearchIcon, Icon$1s as SellIcon, Icon$1t as ShareIcon, Skeleton, Icon$1u as SmallDotIcon, Spinner, Icon$1v as StarFillIcon, Icon$1w as StarLineIcon, Icon$27 as SunIcon, Svg, Icon$1y as SwapFillIcon, Icon$1x as SwapIcon, Icon$1z as SwapVertIcon, Icon$1A as SyncAltIcon, Tag, Icon$28 as TeamBattleIcon, Icon$1B as TeamPlayerIcon, Icon$1C as TelegramIcon, Icon$1D as TestnetIcon, Text, Icon$1E as Ticket, Icon$1F as TicketFillIcon, Icon$1E as TicketIcon, Icon$1G as TicketRound, Icon$1H as TimerIcon, ToastContainer, Toggle, Icon$1I as TokenPocketIcon, Icon$1K as TradeFilledIcon, Icon$1J as TradeIcon, Icon$2b as TrophyFillIcon, Icon$1L as TrophyGoldIcon, Icon$2a as TrophyIcon, Icon$1M as TrustWalletIcon, Icon$1O as TuneIcon, Icon$1N as TwitterIcon, Icon$1h as VerifiedIcon, Icon$1P as VisibilityOff, Icon$1Q as VisibilityOn, Icon$1R as VolumeOffIcon, Icon$1S as VolumeUpIcon, Icon$1T as VoteIcon, Icon$1Y as WaitIcon, Icon$1V as WalletConnectIcon, Icon$1X as WalletFilledIcon, Icon$1W as WalletIcon, Icon$1U as WarningIcon, variants$1 as alertVariants, byTextAscending, byTextDescending, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, types as toastTypes, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };

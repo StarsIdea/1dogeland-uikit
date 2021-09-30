@@ -1,28 +1,11 @@
-export declare const links: ({
-    label: string;
-    icon: string;
-    href: string;
-    items?: undefined;
-    calloutClass?: undefined;
-} | {
-    label: string;
-    icon: string;
-    items: {
-        label: string;
-        href: string;
-    }[];
-    href?: undefined;
-    calloutClass?: undefined;
-} | {
-    label: string;
-    icon: string;
-    items: {
-        label: string;
-        href: string;
-    }[];
-    calloutClass: string;
-    href?: undefined;
-})[];
+import { MenuItemsType } from "../../components/MenuItems/types";
+import { LinkStatus } from "./types";
+export declare const status: {
+    LIVE: LinkStatus;
+    SOON: LinkStatus;
+    NEW: LinkStatus;
+};
+export declare const links: MenuItemsType[];
 export declare const socials: ({
     label: string;
     icon: string;

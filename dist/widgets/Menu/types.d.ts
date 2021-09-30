@@ -1,5 +1,6 @@
 import { Login } from "../WalletModal/types";
 import { FooterLinkType } from "../../components/Footer/types";
+import { Colors } from "../../theme/types";
 export interface LangType {
     code: string;
     language: string;
@@ -50,4 +51,8 @@ export interface NavProps extends PanelProps {
     login: Login;
     profile?: Profile;
     logout: () => void;
+}
+export interface LinkStatus {
+    text: string;
+    color: keyof Colors;
 }

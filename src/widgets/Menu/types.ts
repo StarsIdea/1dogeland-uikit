@@ -1,5 +1,9 @@
 import { Login } from "../WalletModal/types";
 import { FooterLinkType } from "../../components/Footer/types";
+import { ReactElement } from "react";
+import { MenuItemsType } from "../../components/MenuItems/types";
+import { SubMenuItemsType } from "../../components/SubMenuItems/types";
+import { Colors } from "../../theme/types";
 
 export interface LangType {
   code: string;
@@ -58,4 +62,9 @@ export interface NavProps extends PanelProps {
   login: Login;
   profile?: Profile;
   logout: () => void;
+}
+
+export interface LinkStatus {
+  text: string;
+  color: keyof Colors;
 }

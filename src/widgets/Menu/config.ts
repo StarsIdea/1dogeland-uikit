@@ -1,10 +1,31 @@
-export const links = [
+import { noop } from "lodash";
+import { DropdownMenuItems, DropdownMenuItemType } from "../../components/DropdownMenu/types";
+import { MenuItemsType } from "../../components/MenuItems/types";
+import { LinkStatus } from "./types";
+
+export const status = {
+  LIVE: <LinkStatus>{
+    text: "LIVE",
+    color: "failure",
+  },
+  SOON: <LinkStatus>{
+    text: "SOON",
+    color: "warning",
+  },
+  NEW: <LinkStatus>{
+    text: "NEW",
+    color: "success",
+  },
+};
+
+export const links: MenuItemsType[] = [
   {
     label: "Home",
     icon: "HomeIcon",
     href: "/",
   },
   {
+    href: "",
     label: "Trade",
     icon: "TradeIcon",
     items: [
@@ -39,6 +60,7 @@ export const links = [
     href: "/nft",
   },
   {
+    href: "",
     label: "Profile & Teams",
     icon: "GroupsIcon",
     items: [
@@ -51,9 +73,10 @@ export const links = [
         href: "/",
       },
     ],
-    calloutClass: "rainbow",
+    // calloutClass: "rainbow",
   },
   {
+    href: "",
     label: "Info",
     icon: "InfoIcon",
     items: [
@@ -76,6 +99,7 @@ export const links = [
     ],
   },
   {
+    href: "",
     label: "IFO",
     icon: "IfoIcon",
     items: [
@@ -90,6 +114,7 @@ export const links = [
     ],
   },
   {
+    href: "",
     label: "More",
     icon: "MoreIcon",
     items: [
@@ -100,14 +125,17 @@ export const links = [
       {
         label: "Github",
         href: "https://github.com/goosedefi/",
+        type: DropdownMenuItemType.EXTERNAL_LINK,
       },
       {
         label: "Docs",
         href: "https://goosedefi.gitbook.io/goose-finance/",
+        type: DropdownMenuItemType.EXTERNAL_LINK,
       },
       {
         label: "Blog",
         href: "https://goosefinance.medium.com/",
+        type: DropdownMenuItemType.EXTERNAL_LINK,
       },
     ],
   },
