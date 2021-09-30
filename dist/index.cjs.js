@@ -3164,11 +3164,11 @@ var templateObject_1$F;
 
 var Logo$1 = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 60 60" }, props),
-        React__default['default'].createElement("image", { width: "60", height: "60", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 48 48" }, props),
+        React__default['default'].createElement("image", { width: "48", height: "48", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
 };
 
-var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObject_1$G || (templateObject_1$G = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 60px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 60px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"])), function (_a) {
+var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObject_1$G || (templateObject_1$G = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 48px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 48px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, function (_a) {
