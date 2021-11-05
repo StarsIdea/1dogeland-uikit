@@ -8,7 +8,7 @@ import { BottomNavProps } from "./types";
 const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", activeSubItem = "", ...props }) => {
   return (
     <StyledBottomNav justifyContent="space-around" {...props}>
-      {items.map(({ label, items: menuItems, href, icon, showOnMobile = true, showItemsOnMobile = true }) => {
+      {items.map(({ label, items: menuItems = [], href, icon, showOnMobile = true, showItemsOnMobile = true }) => {
         return (
           showOnMobile && (
             <DropdownMenu
@@ -21,6 +21,7 @@ const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", acti
               <Box>
                 <BottomNavItem
                   href={href}
+                  hasChild={menuItems.length}
                   isActive={href === activeItem}
                   label={label}
                   iconName={icon}

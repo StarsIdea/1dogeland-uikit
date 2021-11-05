@@ -7,6 +7,7 @@ import { BottomNavItemProps } from "./types";
 
 const BottomNavItem: React.FC<BottomNavItemProps> = ({
   label,
+  hasChild,
   iconName,
   href,
   showItemsOnMobile = false,
@@ -36,9 +37,15 @@ const BottomNavItem: React.FC<BottomNavItemProps> = ({
   );
 
   return showItemsOnMobile ? (
-    <StyledBottomNavItem type="button" {...props}>
-      {bottomNavItemContent}
-    </StyledBottomNavItem>
+    (hasChild > 0) ? (
+      <StyledBottomNavItem type="button" {...props}>
+        {bottomNavItemContent}
+      </StyledBottomNavItem>      
+    ):(
+      <StyledBottomNavItem as={Link} to={href} {...props}>
+        {bottomNavItemContent}
+      </StyledBottomNavItem>
+    )
   ) : (
     <StyledBottomNavItem as={Link} to={href} {...props}>
       {bottomNavItemContent}

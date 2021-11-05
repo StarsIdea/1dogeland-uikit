@@ -21,13 +21,13 @@ export const status = {
 export const links: MenuItemsType[] = [
   {
     label: "Home",
-    icon: "HomeIcon",
+    icon: "Battle",
     href: "/",
   },
   {
     href: "",
     label: "Trade",
-    icon: "TradeIcon",
+    icon: "Doge",
     items: [
       {
         label: "Exchange",
@@ -41,28 +41,28 @@ export const links: MenuItemsType[] = [
   },
   {
     label: "Farms",
-    icon: "FarmIcon",
+    icon: "Farm",
     href: "/farms",
   },
   {
     label: "Pools",
-    icon: "PoolIcon",
+    icon: "Pool",
     href: "/syrup",
   },
   {
     label: "Lottery",
-    icon: "TicketIcon",
+    icon: "Ticket",
     href: "/lottery",
   },
   {
     label: "NFT",
-    icon: "NftIcon",
+    icon: "Nft",
     href: "/nft",
   },
   {
     href: "",
     label: "Profile & Teams",
-    icon: "GroupsIcon",
+    icon: "Groups",
     items: [
       {
         label: "Leaderboard",
@@ -78,7 +78,7 @@ export const links: MenuItemsType[] = [
   {
     href: "",
     label: "Info",
-    icon: "InfoIcon",
+    icon: "Info",
     items: [
       {
         label: "Overview",
@@ -101,7 +101,7 @@ export const links: MenuItemsType[] = [
   {
     href: "",
     label: "IFO",
-    icon: "IfoIcon",
+    icon: "Ifo",
     items: [
       {
         label: "Next",
@@ -116,7 +116,7 @@ export const links: MenuItemsType[] = [
   {
     href: "",
     label: "More",
-    icon: "MoreIcon",
+    icon: "More",
     items: [
       // {
       //   label: "Voting",
@@ -144,7 +144,7 @@ export const links: MenuItemsType[] = [
 export const socials = [
   {
     label: "Telegram",
-    icon: "TelegramIcon",
+    icon: "Telegram",
     items: [
       {
         label: "English",
