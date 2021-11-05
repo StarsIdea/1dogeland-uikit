@@ -26,13 +26,13 @@ const BottomNavItem: React.FC<BottomNavItemProps> = ({
           activeBackgroundColor="backgroundAlt"
         />
       )}
-      <StyledBottomNavText
+      {/* <StyledBottomNavText
         color={isActive ? "text" : "textSubtle"}
         fontWeight={isActive ? "600" : "400"}
         fontSize="10px"
       >
         {label}
-      </StyledBottomNavText>
+      </StyledBottomNavText> */}
     </Flex>
   );
 

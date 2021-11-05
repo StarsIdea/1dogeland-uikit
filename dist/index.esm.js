@@ -2875,14 +2875,12 @@ var StyledBottomNavItem = styled.button(templateObject_1$B || (templateObject_1$
     var theme = _a.theme;
     return theme.colors.tertiary;
 });
-var StyledBottomNavText = styled(Text)(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  display: -webkit-box;\n  overflow: hidden;\n  user-select: none;\n  -webkit-line-clamp: 1;\n  -webkit-box-orient: vertical;\n  -webkit-user-select: none;\n  -webkit-touch-callout: none;\n"], ["\n  display: -webkit-box;\n  overflow: hidden;\n  user-select: none;\n  -webkit-line-clamp: 1;\n  -webkit-box-orient: vertical;\n  -webkit-user-select: none;\n  -webkit-touch-callout: none;\n"])));
+styled(Text)(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  display: -webkit-box;\n  overflow: hidden;\n  user-select: none;\n  -webkit-line-clamp: 1;\n  -webkit-box-orient: vertical;\n  -webkit-user-select: none;\n  -webkit-touch-callout: none;\n"], ["\n  display: -webkit-box;\n  overflow: hidden;\n  user-select: none;\n  -webkit-line-clamp: 1;\n  -webkit-box-orient: vertical;\n  -webkit-user-select: none;\n  -webkit-touch-callout: none;\n"])));
 var templateObject_1$B, templateObject_2$b;
 
 var BottomNavItem = function (_a) {
-    var label = _a.label, hasChild = _a.hasChild, iconName = _a.iconName, href = _a.href, _b = _a.showItemsOnMobile, showItemsOnMobile = _b === void 0 ? false : _b, _c = _a.isActive, isActive = _c === void 0 ? false : _c, props = __rest(_a, ["label", "hasChild", "iconName", "href", "showItemsOnMobile", "isActive"]);
-    var bottomNavItemContent = (React.createElement(Flex$1, { flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100%" },
-        iconName && (React.createElement(AnimatedIconComponent, { iconName: iconName, height: "22px", width: "21px", color: isActive ? "secondary" : "textSubtle", isActive: isActive, activeBackgroundColor: "backgroundAlt" })),
-        React.createElement(StyledBottomNavText, { color: isActive ? "text" : "textSubtle", fontWeight: isActive ? "600" : "400", fontSize: "10px" }, label)));
+    _a.label; var hasChild = _a.hasChild, iconName = _a.iconName, href = _a.href, _b = _a.showItemsOnMobile, showItemsOnMobile = _b === void 0 ? false : _b, _c = _a.isActive, isActive = _c === void 0 ? false : _c, props = __rest(_a, ["label", "hasChild", "iconName", "href", "showItemsOnMobile", "isActive"]);
+    var bottomNavItemContent = (React.createElement(Flex$1, { flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100%" }, iconName && (React.createElement(AnimatedIconComponent, { iconName: iconName, height: "22px", width: "21px", color: isActive ? "secondary" : "textSubtle", isActive: isActive, activeBackgroundColor: "backgroundAlt" }))));
     return showItemsOnMobile ? ((hasChild > 0) ? (React.createElement(StyledBottomNavItem, __assign({ type: "button" }, props), bottomNavItemContent)) : (React.createElement(StyledBottomNavItem, __assign({ as: Link$1, to: href }, props), bottomNavItemContent))) : (React.createElement(StyledBottomNavItem, __assign({ as: Link$1, to: href }, props), bottomNavItemContent));
 };
 
