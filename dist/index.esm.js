@@ -1345,6 +1345,18 @@ var Icon$2d = function (props) {
             React.createElement("path", { d: "M1045 2194 c-60 -137 -110 -226 -163 -289 -31 -37 -67 -82 -80 -99\r\n        -24 -33 -62 -143 -62 -181 0 -18 -27 -44 -112 -111 -167 -129 -315 -263 -481\r\n        -433 l-148 -151 53 -52 c41 -41 62 -74 90 -142 94 -220 276 -417 598 -645\r\n        l115 -81 6 142 c7 161 12 190 45 266 35 79 78 127 140 158 52 26 60 27 157 21\r\n        117 -7 235 -37 387 -97 125 -49 209 -61 261 -36 58 28 176 133 241 214 33 42\r\n        76 87 94 100 82 55 70 133 -28 183 -15 8 -53 39 -85 70 -64 61 -183 153 -280\r\n        214 -55 35 -65 46 -79 90 -34 102 -84 148 -223 206 -42 17 -78 33 -80 35 -1 1\r\n        6 31 18 66 43 131 51 305 20 446 -15 71 -25 82 -49 53 -49 -58 -121 -192 -126\r\n        -233 -6 -57 -45 -230 -50 -225 -2 2 -9 67 -14 143 -5 76 -16 166 -25 199 -20\r\n        76 -72 189 -96 211 -18 16 -20 14 -44 -42z m544 -905 c86 -30 59 -159 -34\r\n        -159 -86 0 -113 118 -35 157 31 16 30 16 69 2z" }))));
 };
 
+var Icon$2e = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 225 225" }, props),
+        React.createElement("g", { transform: "translate(0.000000,225.000000) scale(0.100000,-0.100000)" },
+            React.createElement("path", { d: "M824 2050 c-137 -104 -249 -194 -249 -200 0 -6 32 -28 70 -50 l70\r\n        -38 183 140 182 140 0 99 c0 54 -2 99 -4 99 -2 0 -116 -85 -252 -190z" }),
+            React.createElement("path", { d: "M1170 2142 l0 -100 183 -140 182 -140 70 38 c38 21 71 43 72 47 3 7\r\n        -447 358 -494 387 -10 5 -13 -15 -13 -92z" }),
+            React.createElement("path", { d: "M942 1832 l-181 -137 0 -570 0 -570 179 -135 c98 -74 184 -134 190\r\n        -132 7 1 90 62 185 135 l174 132 0 570 0 570 -171 130 c-94 72 -176 133 -183\r\n        137 -8 5 -81 -45 -193 -130z m324 -150 c110 -90 127 -119 83 -143 -17 -9 -27\r\n        -7 -54 13 -73 52 -215 179 -215 193 0 7 10 21 22 29 27 19 34 15 164 -92z\r\n        m-115 -153 c116 -95 213 -179 216 -187 8 -20 -10 -46 -34 -50 -23 -3 -453 341\r\n        -453 363 0 29 13 45 37 45 17 0 89 -53 234 -171z" }),
+            React.createElement("path", { d: "M510 1125 c0 -361 3 -654 8 -652 4 2 40 23 80 46 l72 42 0 564 0 564\r\n        -72 42 c-40 23 -76 44 -80 46 -5 2 -8 -291 -8 -652z" }),
+            React.createElement("path", { d: "M1658 1733 l-78 -45 0 -563 0 -563 78 -45 77 -45 3 330 c1 181 1 475\r\n        0 653 l-3 323 -77 -45z" }),
+            React.createElement("path", { d: "M644 450 c-38 -22 -69 -44 -69 -50 0 -6 113 -96 250 -201 l250 -191\r\n        3 98 c3 98 3 99 -25 122 -15 12 -98 76 -184 141 l-156 119 -69 -38z" }),
+            React.createElement("path", { d: "M1353 348 l-183 -140 0 -100 c0 -77 3 -97 13 -92 47 29 497 380 494\r\n        387 -1 4 -34 26 -72 47 l-70 38 -182 -140z" }))));
+};
+
 var IconModule = /*#__PURE__*/Object.freeze({
     __proto__: null,
     AccountIcon: Icon$4,
@@ -1491,6 +1503,7 @@ var IconModule = /*#__PURE__*/Object.freeze({
     TrophyFillIcon: Icon$2b,
     BattleIcon: Icon$2c,
     DogeIcon: Icon$2d,
+    StoneIcon: Icon$2e,
     Svg: Svg
 });
 
@@ -3166,7 +3179,7 @@ var Logo$2 = function (_a) {
 };
 var templateObject_1$G, templateObject_2$e;
 
-var Icon$2e = function (props) {
+var Icon$2f = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React.createElement("path", { d: "M77.7602 16.9155L51.9419 36.0497L56.7382 24.7733L77.7602 16.9155Z", fill: "#E17726" }),
@@ -3200,20 +3213,20 @@ var Icon$2e = function (props) {
         React.createElement("path", { d: "M51.9415 50.3617L52.8344 35.4115L56.7378 24.7729H39.262L43.1653 35.4115L44.0583 50.3617L44.3899 55.0559L44.4154 66.664H51.5843L51.6099 55.0559L51.9415 50.3617Z", fill: "#F5841F" })));
 };
 
-var Icon$2f = function (props) {
+var Icon$2g = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M66.4573 43.7107C64.8919 42.1452 64.8919 39.6071 66.4573 38.0416C68.0228 36.4762 70.5609 36.4762 72.1264 38.0416C73.6918 39.6071 73.6918 42.1452 72.1264 43.7107C70.5609 45.2762 68.0228 45.2762 66.4573 43.7107ZM52.9933 57.1747C51.8192 56.0006 51.8192 54.097 52.9933 52.9229C54.1674 51.7488 56.071 51.7488 57.2451 52.9229C58.4192 54.097 58.4192 56.0006 57.2451 57.1747C56.071 58.3488 54.1674 58.3488 52.9933 57.1747ZM74.2523 50.0884C73.0782 48.9143 73.0782 47.0107 74.2523 45.8366C75.4263 44.6625 77.3299 44.6625 78.504 45.8366C79.6781 47.0107 79.6781 48.9143 78.504 50.0884C77.3299 51.2625 75.4263 51.2625 74.2523 50.0884ZM67.166 57.1747C65.9919 56.0006 65.9919 54.097 67.166 52.9229C68.34 51.7488 70.2436 51.7488 71.4177 52.9229C72.5918 54.097 72.5918 56.0006 71.4177 57.1747C70.2436 58.3488 68.34 58.3488 67.166 57.1747ZM82.0472 56.466C81.2645 55.6833 81.2645 54.4142 82.0472 53.6315C82.8299 52.8488 84.099 52.8488 84.8817 53.6315C85.6644 54.4142 85.6644 55.6833 84.8817 56.466C84.099 57.2488 82.8299 57.2488 82.0472 56.466ZM74.9609 63.5523C74.1782 62.7696 74.1782 61.5005 74.9609 60.7178C75.7436 59.9351 77.0127 59.9351 77.7954 60.7178C78.5781 61.5005 78.5781 62.7696 77.7954 63.5523C77.0127 64.3351 75.7436 64.3351 74.9609 63.5523ZM59.371 50.797C57.8056 49.2315 57.8056 46.6934 59.371 45.1279C60.9365 43.5625 63.4746 43.5625 65.0401 45.1279C66.6055 46.6934 66.6055 49.2315 65.0401 50.797C63.4746 52.3625 60.9365 52.3625 59.371 50.797ZM59.371 36.6244C57.8056 35.0589 57.8056 32.5208 59.371 30.9553C60.9365 29.3899 63.4746 29.3899 65.0401 30.9553C66.6055 32.5208 66.6055 35.0589 65.0401 36.6244C63.4746 38.1898 60.9365 38.1898 59.371 36.6244ZM52.2847 43.7107C50.7193 42.1452 50.7193 39.6071 52.2847 38.0416C53.8502 36.4762 56.3883 36.4762 57.9538 38.0416C59.5192 39.6071 59.5192 42.1452 57.9538 43.7107C56.3883 45.2762 53.8502 45.2762 52.2847 43.7107ZM38.0462 43.7107C36.4808 42.1452 36.4808 39.6071 38.0462 38.0416C39.6117 36.4762 42.1498 36.4762 43.7153 38.0416C45.2807 39.6071 45.2807 42.1452 43.7153 43.7107C42.1498 45.2762 39.6117 45.2762 38.0462 43.7107ZM24.5823 57.1747C23.4082 56.0006 23.4082 54.097 24.5823 52.9229C25.7564 51.7488 27.66 51.7488 28.8341 52.9229C30.0081 54.097 30.0081 56.0006 28.8341 57.1747C27.66 58.3488 25.7564 58.3488 24.5823 57.1747ZM45.8412 50.0884C44.6671 48.9143 44.6671 47.0107 45.8412 45.8366C47.0153 44.6625 48.9189 44.6625 50.093 45.8366C51.2671 47.0107 51.2671 48.9143 50.093 50.0884C48.9189 51.2625 47.0153 51.2625 45.8412 50.0884ZM38.7549 57.1747C37.5808 56.0006 37.5808 54.097 38.7549 52.9229C39.929 51.7488 41.8326 51.7488 43.0067 52.9229C44.1807 54.097 44.1807 56.0006 43.0067 57.1747C41.8326 58.3488 39.929 58.3488 38.7549 57.1747ZM11.1183 56.466C10.3356 55.6833 10.3356 54.4142 11.1183 53.6315C11.901 52.8488 13.1701 52.8488 13.9528 53.6315C14.7356 54.4142 14.7356 55.6833 13.9528 56.466C13.1701 57.2488 11.901 57.2488 11.1183 56.466ZM18.2046 63.5523C17.4219 62.7696 17.4219 61.5005 18.2046 60.7178C18.9873 59.9351 20.2564 59.9351 21.0391 60.7178C21.8219 61.5005 21.8219 62.7696 21.0391 63.5523C20.2564 64.3351 18.9873 64.3351 18.2046 63.5523ZM46.5498 63.5523C45.7671 62.7696 45.7671 61.5005 46.5498 60.7178C47.3325 59.9351 48.6016 59.9351 49.3843 60.7178C50.1671 61.5005 50.1671 62.7696 49.3843 63.5523C48.6016 64.3351 47.3325 64.3351 46.5498 63.5523ZM17.496 50.0884C16.3219 48.9143 16.3219 47.0107 17.496 45.8366C18.6701 44.6625 20.5737 44.6625 21.7478 45.8366C22.9218 47.0107 22.9218 48.9143 21.7478 50.0884C20.5737 51.2625 18.6701 51.2625 17.496 50.0884ZM30.9599 50.797C29.3945 49.2315 29.3945 46.6934 30.9599 45.1279C32.5254 43.5625 35.0635 43.5625 36.629 45.1279C38.1944 46.6934 38.1944 49.2315 36.629 50.797C35.0635 52.3625 32.5254 52.3625 30.9599 50.797ZM30.9599 36.6244C29.3945 35.0589 29.3945 32.5208 30.9599 30.9553C32.5254 29.3899 35.0635 29.3899 36.629 30.9553C38.1944 32.5208 38.1944 35.0589 36.629 36.6244C35.0635 38.1898 32.5254 38.1898 30.9599 36.6244ZM23.8736 43.7107C22.3082 42.1452 22.3082 39.6071 23.8736 38.0416C25.4391 36.4762 27.9772 36.4762 29.5427 38.0416C31.1081 39.6071 31.1081 42.1452 29.5427 43.7107C27.9772 45.2762 25.4391 45.2762 23.8736 43.7107Z", fill: "#1D222A" })));
 };
 
-var Icon$2g = function (props) {
+var Icon$2h = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React.createElement("path", { d: "M44.3288 35.3546V21.7134H19.0926C18.581 21.7134 18.24 22.0544 18.24 22.566V41.8342C18.24 42.3457 18.581 42.6867 19.0926 42.6867H28.8119V77.8129C28.8119 78.3244 29.153 78.6654 29.6645 78.6654H45.5224C46.0339 78.6654 46.375 78.3244 46.375 77.8129V35.3546H44.3288Z", fill: "#29AEFF" }),
         React.createElement("path", { d: "M61.8919 17.2798H55.7534H39.2134C38.7019 17.2798 38.3608 17.6208 38.3608 18.1324V73.3792C38.3608 73.8908 38.7019 74.2318 39.2134 74.2318H55.0713C55.5829 74.2318 55.9239 73.8908 55.9239 73.3792V59.397H62.0624C73.6575 59.397 83.0358 50.0187 83.0358 38.4237C83.0358 26.6581 73.487 17.2798 61.8919 17.2798Z", fill: "#2761E7" })));
 };
 
-var Icon$2h = function (props) {
+var Icon$2i = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("g", { clipPath: "url(#clip0)" },
             React.createElement("path", { d: "M48.0048 96.0097C74.5172 96.0097 96.0097 74.5172 96.0097 48.0048C96.0097 21.4925 74.5172 0 48.0048 0C21.4925 0 0 21.4925 0 48.0048C0 74.5172 21.4925 96.0097 48.0048 96.0097Z", fill: "#3375BB" }),
@@ -3223,13 +3236,13 @@ var Icon$2h = function (props) {
                 React.createElement("rect", { width: "96", height: "96", fill: "white" })))));
 };
 
-var Icon$2i = function (props) {
+var Icon$2j = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("path", { d: "M96 48C96 21.4903 74.5097 0 48 0C21.4903 0 0 21.4903 0 48C0 74.5097 21.4903 96 48 96C74.5097 96 96 74.5097 96 48Z", fill: "#3389FB" }),
         React.createElement("path", { d: "M29.6927 35.4245C39.8036 25.5252 56.1965 25.5252 66.3074 35.4245L67.5242 36.6159C68.0298 37.1109 68.0298 37.9134 67.5242 38.4084L63.3616 42.4839C63.1088 42.7314 62.699 42.7314 62.4462 42.4839L60.7717 40.8444C53.7181 33.9384 42.282 33.9384 35.2284 40.8444L33.4351 42.6002C33.1823 42.8477 32.7725 42.8477 32.5197 42.6002L28.3571 38.5247C27.8515 38.0297 27.8515 37.2272 28.3571 36.7322L29.6927 35.4245ZM74.9161 43.8532L78.6208 47.4805C79.1264 47.9755 79.1264 48.778 78.6208 49.2729L61.9159 65.6288C61.4103 66.1237 60.5907 66.1237 60.0851 65.6288C60.0851 65.6288 60.0851 65.6288 60.0851 65.6288L48.229 54.0206C48.1026 53.8968 47.8977 53.8968 47.7713 54.0206C47.7713 54.0206 47.7713 54.0206 47.7713 54.0206L35.9153 65.6288C35.4098 66.1237 34.5902 66.1237 34.0846 65.6288C34.0846 65.6288 34.0846 65.6288 34.0846 65.6288L17.3792 49.2727C16.8736 48.7778 16.8736 47.9753 17.3792 47.4803L21.0839 43.853C21.5895 43.3581 22.4091 43.3581 22.9146 43.853L34.771 55.4614C34.8974 55.5851 35.1023 55.5851 35.2287 55.4614C35.2287 55.4614 35.2287 55.4614 35.2287 55.4614L47.0844 43.853C47.59 43.358 48.4096 43.358 48.9152 43.853C48.9152 43.853 48.9152 43.853 48.9152 43.853L60.7715 55.4614C60.8979 55.5851 61.1028 55.5851 61.2292 55.4614L73.0854 43.8532C73.5909 43.3583 74.4105 43.3583 74.9161 43.8532Z", fill: "white" })));
 };
 
-var Icon$2j = function (props) {
+var Icon$2k = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
         React.createElement("path", { d: "M24 0H8C3.58172 0 0 3.58172 0 8V24C0 28.4183 3.58172 32 8 32H24C28.4183 32 32 28.4183 32 24V8C32 3.58172 28.4183 0 24 0Z", fill: "#1E2026" }),
         React.createElement("path", { d: "M16.2857 4L9.97035 7.6761L12.2922 9.03415L16.2857 6.7161L20.2792 9.03415L22.6011 7.6761L16.2857 4Z", fill: "#F0B90B" }),
@@ -3247,32 +3260,32 @@ var Icon$2j = function (props) {
 var connectors = [
     {
         title: "Metamask",
-        icon: Icon$2e,
-        connectorId: "injected",
-    },
-    {
-        title: "TrustWallet",
-        icon: Icon$2h,
-        connectorId: "injected",
-    },
-    {
-        title: "MathWallet",
         icon: Icon$2f,
         connectorId: "injected",
     },
     {
-        title: "TokenPocket",
+        title: "TrustWallet",
+        icon: Icon$2i,
+        connectorId: "injected",
+    },
+    {
+        title: "MathWallet",
         icon: Icon$2g,
         connectorId: "injected",
     },
     {
+        title: "TokenPocket",
+        icon: Icon$2h,
+        connectorId: "injected",
+    },
+    {
         title: "WalletConnect",
-        icon: Icon$2i,
+        icon: Icon$2j,
         connectorId: "walletconnect",
     },
     {
         title: "Binance Chain Wallet",
-        icon: Icon$2j,
+        icon: Icon$2k,
         connectorId: "bsc",
     },
 ];
@@ -3389,7 +3402,7 @@ var UserBlock = function (_a) {
     },
     {
         label: "Farms",
-        icon: "Farm",
+        icon: "Stone",
         href: "/farms",
     },
     {
@@ -3808,4 +3821,4 @@ var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark, button
 
 var lightTheme = __assign(__assign({}, base), { isDark: false, alert: light, button: light$1, colors: lightColors, card: light$2, toggle: light$4, nav: light$5, modal: light$6, radio: light$3 });
 
-export { Icon$5 as AccountFilledIcon, Icon$4 as AccountIcon, Icon$6 as AddIcon, Alert, Icon$7 as ArrowBackIcon, Icon$8 as ArrowDownIcon, Icon$9 as ArrowDropDownIcon, Icon$a as ArrowDropUpIcon, Icon$b as ArrowFirstIcon, Icon$c as ArrowForwardIcon, Icon$d as ArrowLastIcon, Icon$e as ArrowUpIcon, Icon$f as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$2c as BattleIcon, Icon$h as BinanceChainIcon, Icon$g as BinanceIcon, Icon$2 as BlockIcon, Icon$i as BnbUsdtPairTokenIcon, Breadcrumbs, Icon$j as BscScanIcon, Icon$k as BunnyCardsIcon, Icon$l as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$p as CalculateIcon, Icon$m as CameraIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$o as CardViewIcon, Icon$n as Cards, GridLayout$1 as CardsLayout, Icon$r as ChartIcon, Checkbox, Icon$t as CheckmarkCircleFillIcon, Icon as CheckmarkCircleIcon, Icon$s as CheckmarkIcon, Icon$u as ChevronDownIcon, Icon$v as ChevronLeftIcon, Icon$w as ChevronRightIcon, Icon$x as ChevronUpIcon, Icon$q as CircleOutlineIcon, Icon$y as CloseIcon, Icon$z as CogIcon, Icon$A as Coin98Icon, Icon$C as CommunityFilledIcon, Icon$B as CommunityIcon, Icon$D as CopyIcon, CopyToClipboard, Icon$E as CrownIcon, Icon$F as CurrencyIcon, Icon$2d as DogeIcon, Dropdown, DropdownMenuItemType, Icon$29 as EarnFillIcon, Icon$H as EarnFilledIcon, Icon$G as EarnIcon, Icon$I as EllipsisIcon, Icon$1 as ErrorIcon, Icon$1Z as FarmIcon, Flex, Icon$K as GithubIcon, Icon$1_ as GroupsIcon, Icon$20 as HamburgerCloseIcon, Icon$1$ as HamburgerIcon, Heading, Icon$L as HelpIcon, Icon$M as HistoryIcon, Icon$21 as HomeIcon, IconButton, Icon$22 as IfoIcon, Image, Icon$3 as InfoIcon, Input, Icon$J as InstagramIcon, Icon$O as LanguageCurrencyIcon, Icon$N as LanguageIcon, Icon$P as LaurelLeftIcon, Icon$Q as LaurelRightIcon, Link, LinkExternal, Icon$R as ListViewIcon, Icon$S as LoginIcon, Icon$T as LogoIcon, Icon$U as LogoRoundIcon, LogoWithText as LogoWithTextIcon, Icon$W as LogoutIcon, Icon$V as MathWalletIcon, Icon$X as MedalBronzeIcon, Icon$Y as MedalGoldIcon, Icon$Z as MedalPurpleIcon, Icon$_ as MedalSilverIcon, Icon$$ as MedalTealIcon, Menu, Icon$10 as MetamaskIcon, Icon$11 as MinusIcon, Modal, ModalProvider, Icon$23 as MoonIcon, Icon$12 as MoreHorizontalIcon, Icon$24 as MoreIcon, Icon$13 as MoreVerticalIcon, Icon$25 as NftFillIcon, Icon$15 as NftFilledIcon, Icon$14 as NftIcon, Icon$16 as NoProfileAvatarIcon, Icon$17 as OpenNewIcon, Icon$1a as PancakeRoundIcon, Icon$18 as PancakesIcon, Icon$19 as PencilIcon, Icon$1c as PlayCircleOutlineIcon, Icon$1b as PocketWatchIcon, Icon$26 as PoolIcon, Icon$1d as PredictionsIcon, Icon$1j as PresentCheckIcon, Icon$1l as PresentNoneIcon, Icon$1k as PresentWonIcon, Icon$1e as PrizeIcon, Progress, Icon$1i as ProgressBunny, Icon$1f as ProposalIcon, Radio, Icon$1m as RedditIcon, Icon$1n as RefreshIcon, Icon$1g as RemoveIcon, ResetCSS, Icon$1p as ResourcesFilledIcon, Icon$1o as ResourcesIcon, Icon$1q as SafePalIcon, Icon$1r as SearchIcon, Icon$1s as SellIcon, Icon$1t as ShareIcon, Skeleton, Icon$1u as SmallDotIcon, Spinner, Icon$1v as StarFillIcon, Icon$1w as StarLineIcon, Icon$27 as SunIcon, Svg, Icon$1y as SwapFillIcon, Icon$1x as SwapIcon, Icon$1z as SwapVertIcon, Icon$1A as SyncAltIcon, Tag, Icon$28 as TeamBattleIcon, Icon$1B as TeamPlayerIcon, Icon$1C as TelegramIcon, Icon$1D as TestnetIcon, Text, Icon$1E as Ticket, Icon$1F as TicketFillIcon, Icon$1E as TicketIcon, Icon$1G as TicketRound, Icon$1H as TimerIcon, ToastContainer, Toggle, Icon$1I as TokenPocketIcon, Icon$1K as TradeFilledIcon, Icon$1J as TradeIcon, Icon$2b as TrophyFillIcon, Icon$1L as TrophyGoldIcon, Icon$2a as TrophyIcon, Icon$1M as TrustWalletIcon, Icon$1O as TuneIcon, Icon$1N as TwitterIcon, Icon$1h as VerifiedIcon, Icon$1P as VisibilityOff, Icon$1Q as VisibilityOn, Icon$1R as VolumeOffIcon, Icon$1S as VolumeUpIcon, Icon$1T as VoteIcon, Icon$1Y as WaitIcon, Icon$1V as WalletConnectIcon, Icon$1X as WalletFilledIcon, Icon$1W as WalletIcon, Icon$1U as WarningIcon, variants$1 as alertVariants, byTextAscending, byTextDescending, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, types as toastTypes, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };
+export { Icon$5 as AccountFilledIcon, Icon$4 as AccountIcon, Icon$6 as AddIcon, Alert, Icon$7 as ArrowBackIcon, Icon$8 as ArrowDownIcon, Icon$9 as ArrowDropDownIcon, Icon$a as ArrowDropUpIcon, Icon$b as ArrowFirstIcon, Icon$c as ArrowForwardIcon, Icon$d as ArrowLastIcon, Icon$e as ArrowUpIcon, Icon$f as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$2c as BattleIcon, Icon$h as BinanceChainIcon, Icon$g as BinanceIcon, Icon$2 as BlockIcon, Icon$i as BnbUsdtPairTokenIcon, Breadcrumbs, Icon$j as BscScanIcon, Icon$k as BunnyCardsIcon, Icon$l as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$p as CalculateIcon, Icon$m as CameraIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$o as CardViewIcon, Icon$n as Cards, GridLayout$1 as CardsLayout, Icon$r as ChartIcon, Checkbox, Icon$t as CheckmarkCircleFillIcon, Icon as CheckmarkCircleIcon, Icon$s as CheckmarkIcon, Icon$u as ChevronDownIcon, Icon$v as ChevronLeftIcon, Icon$w as ChevronRightIcon, Icon$x as ChevronUpIcon, Icon$q as CircleOutlineIcon, Icon$y as CloseIcon, Icon$z as CogIcon, Icon$A as Coin98Icon, Icon$C as CommunityFilledIcon, Icon$B as CommunityIcon, Icon$D as CopyIcon, CopyToClipboard, Icon$E as CrownIcon, Icon$F as CurrencyIcon, Icon$2d as DogeIcon, Dropdown, DropdownMenuItemType, Icon$29 as EarnFillIcon, Icon$H as EarnFilledIcon, Icon$G as EarnIcon, Icon$I as EllipsisIcon, Icon$1 as ErrorIcon, Icon$1Z as FarmIcon, Flex, Icon$K as GithubIcon, Icon$1_ as GroupsIcon, Icon$20 as HamburgerCloseIcon, Icon$1$ as HamburgerIcon, Heading, Icon$L as HelpIcon, Icon$M as HistoryIcon, Icon$21 as HomeIcon, IconButton, Icon$22 as IfoIcon, Image, Icon$3 as InfoIcon, Input, Icon$J as InstagramIcon, Icon$O as LanguageCurrencyIcon, Icon$N as LanguageIcon, Icon$P as LaurelLeftIcon, Icon$Q as LaurelRightIcon, Link, LinkExternal, Icon$R as ListViewIcon, Icon$S as LoginIcon, Icon$T as LogoIcon, Icon$U as LogoRoundIcon, LogoWithText as LogoWithTextIcon, Icon$W as LogoutIcon, Icon$V as MathWalletIcon, Icon$X as MedalBronzeIcon, Icon$Y as MedalGoldIcon, Icon$Z as MedalPurpleIcon, Icon$_ as MedalSilverIcon, Icon$$ as MedalTealIcon, Menu, Icon$10 as MetamaskIcon, Icon$11 as MinusIcon, Modal, ModalProvider, Icon$23 as MoonIcon, Icon$12 as MoreHorizontalIcon, Icon$24 as MoreIcon, Icon$13 as MoreVerticalIcon, Icon$25 as NftFillIcon, Icon$15 as NftFilledIcon, Icon$14 as NftIcon, Icon$16 as NoProfileAvatarIcon, Icon$17 as OpenNewIcon, Icon$1a as PancakeRoundIcon, Icon$18 as PancakesIcon, Icon$19 as PencilIcon, Icon$1c as PlayCircleOutlineIcon, Icon$1b as PocketWatchIcon, Icon$26 as PoolIcon, Icon$1d as PredictionsIcon, Icon$1j as PresentCheckIcon, Icon$1l as PresentNoneIcon, Icon$1k as PresentWonIcon, Icon$1e as PrizeIcon, Progress, Icon$1i as ProgressBunny, Icon$1f as ProposalIcon, Radio, Icon$1m as RedditIcon, Icon$1n as RefreshIcon, Icon$1g as RemoveIcon, ResetCSS, Icon$1p as ResourcesFilledIcon, Icon$1o as ResourcesIcon, Icon$1q as SafePalIcon, Icon$1r as SearchIcon, Icon$1s as SellIcon, Icon$1t as ShareIcon, Skeleton, Icon$1u as SmallDotIcon, Spinner, Icon$1v as StarFillIcon, Icon$1w as StarLineIcon, Icon$2e as StoneIcon, Icon$27 as SunIcon, Svg, Icon$1y as SwapFillIcon, Icon$1x as SwapIcon, Icon$1z as SwapVertIcon, Icon$1A as SyncAltIcon, Tag, Icon$28 as TeamBattleIcon, Icon$1B as TeamPlayerIcon, Icon$1C as TelegramIcon, Icon$1D as TestnetIcon, Text, Icon$1E as Ticket, Icon$1F as TicketFillIcon, Icon$1E as TicketIcon, Icon$1G as TicketRound, Icon$1H as TimerIcon, ToastContainer, Toggle, Icon$1I as TokenPocketIcon, Icon$1K as TradeFilledIcon, Icon$1J as TradeIcon, Icon$2b as TrophyFillIcon, Icon$1L as TrophyGoldIcon, Icon$2a as TrophyIcon, Icon$1M as TrustWalletIcon, Icon$1O as TuneIcon, Icon$1N as TwitterIcon, Icon$1h as VerifiedIcon, Icon$1P as VisibilityOff, Icon$1Q as VisibilityOn, Icon$1R as VolumeOffIcon, Icon$1S as VolumeUpIcon, Icon$1T as VoteIcon, Icon$1Y as WaitIcon, Icon$1V as WalletConnectIcon, Icon$1X as WalletFilledIcon, Icon$1W as WalletIcon, Icon$1U as WarningIcon, variants$1 as alertVariants, byTextAscending, byTextDescending, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, types as toastTypes, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };

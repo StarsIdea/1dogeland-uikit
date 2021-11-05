@@ -142,5 +142,6 @@ export { default as TrophyIcon } from "./Icons/Trophy";
 export { default as TrophyFillIcon } from "./Icons/TrophyFill";
 export { default as BattleIcon } from "./Icons/Battle";
 export { default as DogeIcon } from "./Icons/Doge";
+export { default as StoneIcon } from "./Icons/Stone";
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";

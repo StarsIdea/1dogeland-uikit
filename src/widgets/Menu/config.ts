@@ -41,7 +41,7 @@ export const links: MenuItemsType[] = [
   },
   {
     label: "Farms",
-    icon: "Farm",
+    icon: "Stone",
     href: "/farms",
   },
   {
